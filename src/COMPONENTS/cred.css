@@ -1,0 +1,258 @@
+.upper-box{
+    box-sizing: border-box;
+
+position: absolute;
+width: 690px;
+height: 61px;
+left: 375px;
+top: 116px;
+background:  rgba(255, 254, 255, 0.2);
+border: 1px solid #FFFFFF;
+border-radius: 8px 8px 0px 0px;
+
+}
+.lower-box{
+    box-sizing: border-box;
+
+position: absolute;
+width: 690px;
+height: 890px;
+left: 374px;
+top: 178px;
+
+/* Background/dark */
+
+background: #211134;
+border-width: 0px 1px 1px 1px;
+border-style: solid;
+border-color: rgba(255, 255, 255, 0.5);
+backdrop-filter: blur(9.5px);
+/* Note: backdrop-filter has minimal browser support */
+
+border-radius: 8px;
+}
+.box{
+    position: absolute;
+width: 324px;
+height: 52px;
+/* left: 558px;
+top: 202px; */
+
+}
+.inner-box{
+    display: inline-block;
+width: 52px;
+height: 52px;
+/* left: 558px;
+top: 202px; */
+
+/* pink/button */
+
+background: #FF326A;
+border-radius: 4px;
+
+}
+
+.tvT{
+    position: absolute;
+width: 688px;
+height: 80px;
+left: 376px;
+top: 345px;
+
+}
+.rect-3{
+    position: absolute;
+left: 0%;
+right: 81.25%;
+top: 25%;
+bottom: 25%;
+Width:
+129px;
+Height:
+40px;
+background: #FFEE00;
+
+}
+.TL{
+    position: absolute;
+left: 13.81%;
+right: 74.42%;
+top: 23.8%;
+bottom: 25%;
+Width:
+81px;
+Height:
+72px;
+border-radius: 50px;
+background: url(/src/TL.jpg);
+}
+.txt{
+    
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 13px;
+/* identical to box height, or 72% */
+
+text-align: center;
+letter-spacing: 0.07px;
+
+/* Label Color / Dark / Primary */
+
+color: #FFFFFF;
+position: absolute;
+left: 27.03%;
+right: 57.56%;
+top:25%;
+bottom: 25%;
+}
+li{
+    display:inline-block;
+}
+.vs{
+    position: absolute;
+left: 47.67%;
+right: 47.38%;
+top: 25%;
+bottom: 25%;
+color: #FFFFFF;
+}
+.rect-4{
+    position: absolute;
+left: 81.1%;
+right: 0%;
+top: 25%;
+bottom: 25%;
+Width:
+129px;
+Height:
+40px;
+background: #CE0037;
+}
+.txt2{
+    position: absolute;
+left: 61.05%;
+right: 27.03%;
+top: 25%;
+bottom: 25%;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 13px;
+/* identical to box height, or 72% */
+
+text-align: center;
+letter-spacing: 0.07px;
+
+/* Label Color / Dark / Primary */
+
+color: #FFFFFF;
+}
+.ST{
+    position: absolute;
+left: 74.56%;
+right: 13.81%;
+top: 23.8%;
+bottom: 25%;
+border-radius: 52px;
+background-image: url(../ST.png);
+Width:
+81px;
+Height:
+72px;
+background-size: cover;
+background-repeat: no-repeat;
+background-color: #211134;
+border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.playercard1{
+    Width:
+250px;
+Height:
+88px;
+
+background-color:rgba(255, 255, 255, 0.2);
+}
+.playercard2{
+    Width:
+250px;
+Height:
+88px;
+
+background-color:rgba(255, 255, 255, 0.2);;
+}
+.container{
+    left: 407px;
+top: 490px;
+}
+.container2{
+    left: 728px;
+top: 490px;
+}
+ul{
+    list-style:none ;
+}
+.t1list{
+    
+position: absolute;
+width: 300px;
+left: 407px;
+top: 490px;
+
+}
+.t2list{
+    
+position: absolute;
+width: 300px;
+left: 740px;
+top: 490px;
+
+}
+.credit{
+    position: relative;
+left: 33.44%;
+right: 43.28%;
+top: 71.59%;
+bottom: 6.82%;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 19px;
+color: #FF326A;
+}
+.pl-img{
+    background-image: url(../player.jpg);
+    background-color: #211134;
+    Width:
+87px;
+Height:
+87px;
+left: 0;
+}
+button{
+    position: absolute;
+height: 34px;
+left: 407px;
+right: 407px;
+top: 1030px;
+
+/* pink/button */
+
+background: #FF326A;
+border-radius: 8px;
+Width:
+626px;
+}
+a:active{
+    border-color: #CE0037;
+}
+ul:active{
+    border: solid 2px;
+    border-color: #CE0037;
+}
