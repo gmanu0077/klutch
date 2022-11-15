@@ -2,7 +2,6 @@ import "./cred.css";
 import Card from "./card";
 import Rect from "./rectangle";
 import { useEffect, useState } from "react";
-import { AuthContextProvider } from "./card";
 export default function Credit() {
 
   const[selected,setSelected]=useState([])
@@ -17,8 +16,7 @@ export default function Credit() {
       <div className="lower-box">
         <div className="box">
           <div className="inner-box">
-            <AuthContextProvider>
-            <Rect /></AuthContextProvider>
+            <Rect />
           </div>
           <div className="crbox">CREDIT LEFT :{}</div>
         </div>

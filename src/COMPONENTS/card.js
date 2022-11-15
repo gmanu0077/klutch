@@ -1,13 +1,13 @@
-import React, { Component ,createContext,AuthContextProvider} from "react";
+import React, { Component } from "react";
 import axios from "axios";
 const player=({setselect})=>{
     console.log('start')
     setselect(localStorage.getItem('select'))
 }
 const selec=[];
-const AuthContext = createContext();
 
 export default class Card extends Component {
+  set =  this.props.setselect()
   state = {
     roster1: [],
     roster2: [],
@@ -19,7 +19,7 @@ export default class Card extends Component {
     console.log(name, "mmm");
     console.log(this.state.selected, "sel");
     localStorage.setItem('select',this.state.selected)
-    player();
+    set(this.state.selected)
 
   };
   componentDidMount = async () => {
@@ -85,12 +85,8 @@ export default class Card extends Component {
         </div>
 
         <button>preview selection</button>
-        <AuthContext.Provider value={{ selec }}>
-      {props.children}
-    </AuthContext.Provider>
       </div>
     );
   }
 }
 
-export { AuthContextProvider,AuthContext };
