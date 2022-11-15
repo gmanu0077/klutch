@@ -1,6 +1,12 @@
+body{
+    background-image: url(../bg.png);
+    background-color: #211134;
+    font-family: 'Inter';
+font-style: normal;
+}
 .upper-box{
     box-sizing: border-box;
-
+color:#FFFFFF;
 position: absolute;
 width: 690px;
 height: 61px;
@@ -47,6 +53,8 @@ height: 52px;
 top: 202px; */
 
 /* pink/button */
+margin-top: 20%;
+margin-left: 70%;
 
 background: #FF326A;
 border-radius: 4px;
@@ -255,4 +263,51 @@ a:active{
 ul:active{
     border: solid 2px;
     border-color: #CE0037;
+}
+.crbox{
+    box-sizing: border-box;
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 10px;
+gap: 10px;
+
+position: relative;
+width: 224px;
+height: 40px;
+margin-top: 5%;
+margin-left: 70%;
+color:#FFFFFF;
+
+background: rgba(255, 255, 255, 0.6);
+background-blend-mode: overlay;
+border: 1px solid rgba(235, 235, 245, 0.3);
+border-radius: 24px;
+}
+.nav{
+    position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+/* Background/dark */
+
+background: #211134;
+backdrop-filter: blur(8px);
+Width:100%;
+Height:
+78px;
+}
+.symbol{
+    position: absolute;
+left: 4.37%;
+right: 84.55%;
+top: 0;
+bottom: 30.74%;
+color: #FFFFFF;
 }

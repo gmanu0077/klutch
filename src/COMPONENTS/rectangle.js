@@ -1,9 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState,useContext } from "react";
+import { AuthContext } from "./card";
 export default function Rect(){
+  var {selec} = useContext(AuthContext);
+
       const [rectdata, setrectdata] = useState([])
       useEffect(() => { 
-       setrectdata(JSON.parse(localStorage.getItem('selected')))
-       console.log(localStorage.getItem("selected"),"rect")
+       setrectdata(selec)
+       console.log(selec,"rect")
 
       }, []);
     return(
