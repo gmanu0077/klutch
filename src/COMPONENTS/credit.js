@@ -1,13 +1,16 @@
-import "./cred.css";
-import Card from "./card";
-import Rect from "./rectangle";
 import { useEffect, useState } from "react";
-export default function Credit() {
 
-  const[selected,setSelected]=useState([])
-  useEffect(() => { 
-    console.log(selected,"ijijij")
-  }, []);
+import Card from "./card";
+import Selected from "./selected";
+import "./cred.css";
+
+export default function Credit() {
+  const [selected, setSelected] = useState([]);
+  const creditsUsed = selected
+    .map((player) => player.credit)
+    .reduce((a, b) => a + b, 0);
+  const creditsLeft = 12 - creditsUsed;
+
   return (
     <div>
       <div className="upper-box">
@@ -15,10 +18,10 @@ export default function Credit() {
       </div>
       <div className="lower-box">
         <div className="box">
-          <div className="inner-box">
-            <Rect />
+          <div style={{ textAlign: "center", margin: "auto" }}>
+            <Selected selected={selected} />
           </div>
-          <div className="crbox">CREDIT LEFT :{}</div>
+          <div className="crbox">CREDITS LEFT : {creditsLeft}</div>
         </div>
         <div className="tVT">
           <div className="team1">
@@ -37,7 +40,7 @@ export default function Credit() {
           </div>
         </div>
       </div>
-      <Card setselect={setSelected}/>
+      <Card selected={selected} setSelected={setSelected} />
     </div>
   );
 }
