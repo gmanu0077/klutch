@@ -1,4 +1,4 @@
-import Credit from "./components/credit";
+import Credit from "./COMPONENT/credit";
 import "./App.css";
 
 function App() {
