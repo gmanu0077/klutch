@@ -1,11 +1,15 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
-export default function Card({ selected, setSelected }) {
+export default function Card({ selected, setSelected,creditleft }) {
   const [roster1, setRoster1] = useState([]);
   const [roster2, setRoster2] = useState([]);
 
   const select = (player) => {
+    if(creditleft<=2){
+      alert('no more players can be selected')
+      return;
+    }
     setSelected([...selected, player]);
   };
 
@@ -45,7 +49,7 @@ export default function Card({ selected, setSelected }) {
         {roster2.map((player) => {
           const { name, credit, id } = player;
           return (
-            <div className="container2" onClick={() => select(credit, name)}>
+            <div className="container2" onClick={() => select(player)}>
               <ul className="playercard2">
                 <li>
                   <div className="pl-img"></div>

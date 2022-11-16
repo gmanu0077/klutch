@@ -6,6 +6,7 @@ export default function Selected({ selected }) {
   return (
     <div>
       <div style={{ display: "flex" }}>
+        
         {selected.map((player) => (
           <div className="inner-box">{player.credit}</div>
         ))}

@@ -8,6 +8,9 @@ function App() {
         <h2 className="symbol">Klutch</h2>
       </div>
       <Credit />
+    <div className="news"><h2>News</h2></div>
+    <div className="live"><h2>Live matches</h2>
+    </div>
     </div>
   );
 }
